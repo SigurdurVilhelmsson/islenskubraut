@@ -39,13 +39,19 @@ Efst á spjaldasíðunni sérðu þrjá takka:
 
 Veldu stigið sem hentar nemendahópnum þínum.
 
-### Skref 4: Skoðaðu forskoðun
+### Skref 4: Veldu skoðun
 
-Forskoðun á spjaldinu birtist á skjánum. Þú sérð bæði framhlið (orðaforði) og bakhlið (setningarammar).
+Efst á forskoðunarsvæðinu sérðu þrjá flipa:
+
+- **Spurningaspjald** — Leiðandi spurningar sem hjálpa nemandanum að lýsa hlutnum kerfisbundið
+- **Orðaforði** — Framhlið spjaldsins með orðaforða í undirflokkum
+- **Setningarammar** — Bakhlið spjaldsins með setningarömmum og dæmum
+
+Spurningaspjaldið er sjálfgefið og er aðalverkfærið í kennslu.
 
 ### Skref 5: Hladdu niður PDF
 
-Smelltu á **„Hlaða niður PDF"** takkann. PDF skrá hleðst niður á tölvuna þína. Skráin inniheldur tvær síður — framhlið og bakhlið.
+Smelltu á **„Hlaða niður PDF"** takkann. PDF skrá hleðst niður á tölvuna þína. Skráin inniheldur þrjár síður — orðaforði (framhlið), setningarammar (bakhlið) og spurningaspjald.
 
 ---
 
@@ -107,6 +113,32 @@ Smelltu á **„Hlaða niður PDF"** takkann. PDF skrá hleðst niður á tölvu
 3. Nemendur flokka miðana aftur í rétta undirflokka
 4. Tíminn er tekinn — hver er hraðastur?
 
+### Spurningaleikur
+
+**Þátttakendur:** 2–6 nemendur
+
+**Hvernig:**
+1. Einn nemandi fær mynd
+2. Hinir nemendur spyrja spurninga af spurningaspjaldinu, eina í einu
+3. Nemandinn sem hefur myndina svarar með hjálp orðaforðaspjaldsins
+4. Eftir nokkrar spurningar giska hinir á hvað er á myndinni
+
+Þetta snýr hlutverkunum við — nemendur æfa sig bæði í að **spyrja** og **svara**.
+
+**Dæmi:** Nemandi hefur mynd af ketti. Hinir spyrja: *„Hvers konar dýr er þetta?"* → *„Gæludýr."* *„Hvernig finnst það við snertingu?"* → *„Mjúkt."* *„Hvaða hljóð gefur það frá sér?"* → *„Lágt."*
+
+### 20 spurningar
+
+**Þátttakendur:** 2+ nemendur
+
+**Hvernig:**
+1. Einn nemandi hugsar um hlut
+2. Hinir mega spyrja allt að 20 já/nei spurninga
+3. Spurningaspjaldið hjálpar nemendum að velja góðar spurningar
+4. Dæmi: *„Er það stórt?"* *„Er það á landi?"* *„Er það mjúkt?"*
+
+**Dæmi:** Nemandi hugsar um flugvél. Hinir spyrja: *„Er það stórt?"* → *„Já."* *„Er það á landi?"* → *„Nei."* *„Er það í lofti?"* → *„Já."* *„Er það hátt?"* → *„Já."* → *„Er það flugvél?"* → *„Já!"*
+
 ---
 
 ## 4. Fyrir hvaða nemendur hentar hvert stig
@@ -139,7 +171,7 @@ Smelltu á **„Hlaða niður PDF"** takkann. PDF skrá hleðst niður á tölvu
 ### Ráð um prentun
 
 1. **Pappír:** Notaðu venjulegan A4 pappír (80–100 g/m²)
-2. **Tvíhliða prentun:** PDF skráin inniheldur tvær síður — framhlið og bakhlið. Prentaðu tvíhliða ef prentarinn þinn styður það
+2. **Prentun:** PDF skráin inniheldur þrjár síður — orðaforði, setningarammar og spurningaspjald. Prentaðu allar síður. Hægt er að prenta tvíhliða ef prentarinn styður það
 3. **Litaprentun:** Spjöldin eru hönnuð í lit — litaprentun gefur besta útkomuna
 4. **Stærð:** Prentaðu á A4 stærð (210 × 297 mm) — ekki minnka
 
