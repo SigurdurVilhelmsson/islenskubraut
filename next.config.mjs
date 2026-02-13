@@ -2,7 +2,7 @@
 const nextConfig = {
   serverExternalPackages: ['@react-pdf/renderer'],
   turbopack: {
-    root: '.',
+    root: '/var/www/islenskubraut',
   },
 };
 
