@@ -1,6 +1,6 @@
 # Íslenskubraut — Kennsluspjöld
 
-Vefverkfæri til að búa til prentvæn kennsluspjöld fyrir íslenskukennslu. Hannað fyrir kennara í íslenskunámi innflytjenda og flóttamanna við Kvennaskólann í Reykjavík.
+Vefverkfæri til að búa til prentvæn kennsluspjöld fyrir íslenskukennslu. Hannað fyrir kennara á íslenskubraut við Kvennaskólann í Reykjavík.
 
 ## Um verkefnið
 
