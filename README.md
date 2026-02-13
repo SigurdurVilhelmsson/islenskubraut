@@ -4,7 +4,7 @@ Vefverkfæri til að búa til prentvæn kennsluspjöld fyrir íslenskukennslu. H
 
 ## Um verkefnið
 
-Verkfærið hjálpar kennurum að búa til **plastað A4 spjöld** sem nemendur nota í kennslustofunni. Spjöldin innihalda orðaforða skiptan í efnisflokka og setningaramma sem gefa nemandanum strúktúr til að lýsa myndum munnlega á íslensku.
+Verkfærið hjálpar kennurum að búa til **plöstuð A4 spjöld** sem nemendur nota í kennslustofunni. Spjöldin innihalda orðaforða sem skipt er í efnisflokka og setningaramma sem nemendur nota til að lýsa myndum á íslensku.
 
 ### Efnisflokkar
 
