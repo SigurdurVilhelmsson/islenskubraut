@@ -6,7 +6,7 @@ import ReactPDF, {
   StyleSheet,
   Font,
 } from '@react-pdf/renderer';
-import { Category, Level } from '@/data/types';
+import { Category, Level, GuidingQuestion } from '@/data/types';
 import React from 'react';
 
 // Register a font that supports Icelandic characters
@@ -23,6 +23,31 @@ Font.register({
     },
   ],
 });
+
+// Fixed colors for context question types
+const CONTEXT_COLORS: Record<string, string> = {
+  '📍': '#DC2626', // Hvar — red
+  '🕐': '#16A34A', // Hvenær — green
+  '👤': '#EA580C', // Hver — orange
+  '🎯': '#2563EB', // Notagildi — blue
+};
+
+const CONTEXT_ICONS = new Set(['📍', '🕐', '👤', '🎯']);
+
+const QUESTION_LABELS: Record<string, string> = {
+  '📚': 'Flokkar',
+  '👁️': 'Utlit',
+  '✋': 'Aferd',
+  '🔊': 'Hljod',
+  '👃': 'Lykt',
+  '👅': 'Bragd',
+  '🧱': 'Efnividur',
+  '🔷': 'Logun',
+  '🎯': 'Notagildi',
+  '👤': 'Hver?',
+  '📍': 'Hvar?',
+  '🕐': 'Hvenar?',
+};
 
 const styles = StyleSheet.create({
   page: {
@@ -135,7 +160,6 @@ const styles = StyleSheet.create({
   exampleText: {
     fontSize: 12,
     color: '#374151',
-    fontStyle: 'italic',
   },
   teacherBox: {
     backgroundColor: '#FFFBEB',
@@ -162,6 +186,81 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 8,
     color: '#9CA3AF',
+  },
+  // Question card (page 3) styles
+  questionBox: {
+    marginBottom: 8,
+    borderWidth: 1,
+    borderColor: '#E5E7EB',
+    borderRadius: 6,
+    overflow: 'hidden',
+  },
+  questionHeader: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    backgroundColor: '#F9FAFB',
+  },
+  questionText: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#1F2937',
+  },
+  questionLabel: {
+    fontSize: 8,
+    color: '#6B7280',
+  },
+  questionBody: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 3,
+  },
+  dividerContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 8,
+  },
+  dividerLine: {
+    flex: 1,
+    borderBottomWidth: 1,
+    borderBottomColor: '#D1D5DB',
+  },
+  dividerText: {
+    fontSize: 8,
+    fontWeight: 'bold',
+    color: '#9CA3AF',
+    textTransform: 'uppercase',
+    paddingHorizontal: 8,
+  },
+  contextGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 8,
+  },
+  contextCard: {
+    width: '48%',
+    borderRadius: 6,
+    overflow: 'hidden',
+    marginBottom: 4,
+  },
+  contextCardHeader: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+  },
+  contextCardHeaderText: {
+    fontSize: 9,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+  },
+  contextCardBody: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+  },
+  contextCardOption: {
+    fontSize: 9,
+    fontWeight: 'bold',
+    marginBottom: 2,
   },
 });
 
@@ -221,12 +320,109 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } {
     : { r: 0, g: 0, b: 0 };
 }
 
+function createQuestionBlock(
+  question: GuidingQuestion,
+  level: Level,
+  categoryColor: string,
+  index: number,
+) {
+  const answers = question.answers.find((a) => a.level === level);
+  if (!answers || answers.options.length === 0) return null;
+
+  const rgb = hexToRgb(categoryColor);
+  const lightBg = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.05)`;
+  const borderColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.25)`;
+
+  return React.createElement(
+    View,
+    { key: `q-${index}`, style: styles.questionBox },
+    React.createElement(
+      View,
+      { style: styles.questionHeader },
+      React.createElement(Text, { style: styles.questionText }, question.question),
+      React.createElement(
+        Text,
+        { style: styles.questionLabel },
+        `${question.icon} ${QUESTION_LABELS[question.icon] || ''}`
+      )
+    ),
+    React.createElement(
+      View,
+      { style: styles.questionBody },
+      ...answers.options.map((option, optIndex) =>
+        React.createElement(
+          View,
+          {
+            key: optIndex,
+            style: {
+              ...styles.optionTag,
+              borderColor: borderColor,
+              backgroundColor: lightBg,
+            },
+          },
+          React.createElement(
+            Text,
+            { style: { ...styles.optionText, color: categoryColor } },
+            option
+          )
+        )
+      )
+    )
+  );
+}
+
+function createContextCard(
+  question: GuidingQuestion,
+  level: Level,
+  index: number,
+) {
+  const answers = question.answers.find((a) => a.level === level);
+  if (!answers || answers.options.length === 0) return null;
+
+  const color = CONTEXT_COLORS[question.icon] || '#6B7280';
+  const rgb = hexToRgb(color);
+  const lightBg = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.08)`;
+
+  return React.createElement(
+    View,
+    { key: `ctx-${index}`, style: { ...styles.contextCard, backgroundColor: lightBg } },
+    React.createElement(
+      View,
+      { style: { ...styles.contextCardHeader, backgroundColor: color } },
+      React.createElement(
+        Text,
+        { style: styles.contextCardHeaderText },
+        `${question.icon} ${question.question}`
+      )
+    ),
+    React.createElement(
+      View,
+      { style: styles.contextCardBody },
+      ...answers.options.map((option, optIndex) =>
+        React.createElement(
+          Text,
+          { key: optIndex, style: { ...styles.contextCardOption, color: color } },
+          option
+        )
+      )
+    )
+  );
+}
+
 export function createSpjaldDocument(category: Category, level: Level) {
   const sentenceFrame = category.sentenceFrames.find((sf) => sf.level === level);
   const rgb = hexToRgb(category.color);
   const lightBg = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.05)`;
   const borderColor = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.25)`;
   const headerBgFaded = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.8)`;
+
+  // Separate main questions from context questions
+  const mainQuestions = category.guidingQuestions.filter(
+    (q) => !CONTEXT_ICONS.has(q.icon)
+  );
+  const contextQuestions = category.guidingQuestions.filter(
+    (q) => CONTEXT_ICONS.has(q.icon)
+  );
 
   return React.createElement(
     Document,
@@ -356,6 +552,70 @@ export function createSpjaldDocument(category: Category, level: Level) {
           getTeacherNote(level)
         )
       ),
+      React.createElement(
+        Text,
+        { style: styles.footer },
+        `Íslenskubraut — Kvennaskólinn í Reykjavík — ${category.name} ${level}`
+      )
+    ),
+    // Page 3 - Question card (Spurningaspjald)
+    React.createElement(
+      Page,
+      { size: 'A4', style: styles.page },
+      // Header
+      React.createElement(
+        View,
+        { style: { ...styles.frontHeader, backgroundColor: category.color, marginBottom: 12 } },
+        React.createElement(
+          Text,
+          { style: styles.frontHeaderText },
+          `${category.icon}  ${category.name.toUpperCase()}`
+        ),
+        React.createElement(
+          View,
+          { style: styles.levelBadge },
+          React.createElement(Text, { style: styles.levelBadgeText }, level)
+        )
+      ),
+      // Title
+      React.createElement(
+        Text,
+        { style: { ...styles.sentenceTitle, marginBottom: 10 } },
+        'Spurningaspjald'
+      ),
+      // Main questions
+      ...mainQuestions
+        .map((q, i) => createQuestionBlock(q, level, category.color, i))
+        .filter(Boolean),
+      // Divider
+      ...(contextQuestions.length > 0
+        ? [
+            React.createElement(
+              View,
+              { key: 'divider', style: styles.dividerContainer },
+              React.createElement(View, { style: styles.dividerLine }),
+              React.createElement(
+                Text,
+                { style: styles.dividerText },
+                'Notagildi og samhengi'
+              ),
+              React.createElement(View, { style: styles.dividerLine })
+            ),
+          ]
+        : []),
+      // Context cards grid
+      ...(contextQuestions.length > 0
+        ? [
+            React.createElement(
+              View,
+              { key: 'context-grid', style: styles.contextGrid },
+              ...contextQuestions
+                .map((q, i) => createContextCard(q, level, i))
+                .filter(Boolean)
+            ),
+          ]
+        : []),
+      // Footer
       React.createElement(
         Text,
         { style: styles.footer },

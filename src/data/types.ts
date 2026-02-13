@@ -10,6 +10,15 @@ export interface SentenceFrame {
   frames: string[];
 }
 
+export interface GuidingQuestion {
+  question: string;
+  icon: string;
+  answers: {
+    level: Level;
+    options: string[];
+  }[];
+}
+
 export interface Category {
   id: string;
   name: string;
@@ -18,4 +27,5 @@ export interface Category {
   color: string;
   subCategories: SubCategory[];
   sentenceFrames: SentenceFrame[];
+  guidingQuestions: GuidingQuestion[];
 }

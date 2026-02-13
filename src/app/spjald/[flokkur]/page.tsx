@@ -7,13 +7,23 @@ import { getCategoryById } from '@/data';
 import { Level } from '@/data/types';
 import LevelSelector from '@/components/LevelSelector';
 import SpjaldPreview from '@/components/SpjaldPreview';
+import SpurningaSpjald from '@/components/SpurningaSpjald';
 import DownloadButton from '@/components/DownloadButton';
+
+type ViewTab = 'spurningaspjald' | 'ordafordi' | 'setningarammar';
+
+const TABS: { id: ViewTab; label: string }[] = [
+  { id: 'spurningaspjald', label: 'Spurningaspjald' },
+  { id: 'ordafordi', label: 'Orðaforði' },
+  { id: 'setningarammar', label: 'Setningarammar' },
+];
 
 export default function SpjaldPage() {
   const params = useParams();
   const flokkur = params.flokkur as string;
   const category = getCategoryById(flokkur);
   const [level, setLevel] = useState<Level>('A1');
+  const [activeTab, setActiveTab] = useState<ViewTab>('spurningaspjald');
 
   if (!category) {
     return (
@@ -81,9 +91,36 @@ export default function SpjaldPage() {
         />
       </div>
 
-      {/* Preview */}
+      {/* Tab navigation */}
+      <div className="mb-6">
+        <div className="flex gap-1 p-1 bg-gray-100 rounded-xl max-w-lg mx-auto">
+          {TABS.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex-1 px-3 py-2 text-sm font-semibold rounded-lg transition-all ${
+                activeTab === tab.id
+                  ? 'bg-white text-gray-900 shadow-sm'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Preview content */}
       <div className="max-w-lg mx-auto">
-        <SpjaldPreview category={category} level={level} />
+        {activeTab === 'spurningaspjald' && (
+          <SpurningaSpjald category={category} level={level} />
+        )}
+        {activeTab === 'ordafordi' && (
+          <SpjaldPreview category={category} level={level} view="front" />
+        )}
+        {activeTab === 'setningarammar' && (
+          <SpjaldPreview category={category} level={level} view="back" />
+        )}
       </div>
     </div>
   );
