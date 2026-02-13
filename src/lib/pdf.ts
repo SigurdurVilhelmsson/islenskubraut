@@ -160,7 +160,6 @@ const styles = StyleSheet.create({
   exampleText: {
     fontSize: 12,
     color: '#374151',
-    fontStyle: 'italic',
   },
   teacherBox: {
     backgroundColor: '#FFFBEB',
