@@ -62,6 +62,7 @@ export const manneskja: Category = {
         'Þetta er ___.',
         'Hún/Hann er ___.',
         'Hún/Hann ___.',
+        'Maður notar það til að ___.',
       ],
     },
     {
@@ -70,6 +71,8 @@ export const manneskja: Category = {
         'Þetta er ___ sem er ___.',
         'Hún/Hann er ___ og ___.',
         'Hún/Hann vinnur sem ___.',
+        'Maður finnur það ___.',
+        'Maður notar það ___.',
       ],
     },
     {
@@ -77,6 +80,72 @@ export const manneskja: Category = {
       frames: [
         'Ég held að þetta sé ___ vegna þess að ___.',
         'Þessi manneskja er ___ og er þekkt/óþekkt fyrir ___.',
+        'Það er oftast notað af ___ til að ___.',
+      ],
+    },
+  ],
+  guidingQuestions: [
+    {
+      question: 'Hvers konar manneskja er þetta?',
+      icon: '📚',
+      answers: [
+        { level: 'A1', options: ['barn', 'fullorðinn', 'gamall/gömul'] },
+        { level: 'A2', options: ['barn', 'unglingur', 'fullorðinn', 'aldraður/öldruð', 'fræg', 'ekki fræg'] },
+        { level: 'B1', options: ['barn', 'unglingur', 'fullorðinn', 'aldraður/öldruð', 'fræg', 'ekki fræg', 'á lífi', 'látin', 'skálduð persóna'] },
+      ],
+    },
+    {
+      question: 'Hvernig lítur hún/hann út?',
+      icon: '👁️',
+      answers: [
+        { level: 'A1', options: ['há/hár', 'lág/lágur', 'ung/ungur', 'gömul/gamall'] },
+        { level: 'A2', options: ['há/hár', 'lág/lágur', 'ung/ungur', 'gömul/gamall', 'með sítt hár', 'með stutt hár', 'með gleraugu'] },
+        { level: 'B1', options: ['há/hár', 'lág/lágur', 'ung/ungur', 'gömul/gamall', 'með sítt hár', 'með stutt hár', 'sköllótt', 'með gleraugu', 'með skegg', 'án skeggs'] },
+      ],
+    },
+    {
+      question: 'Hvaða lögun hefur það?',
+      icon: '🔷',
+      answers: [
+        { level: 'A1', options: ['stórt', 'lítið', 'hátt', 'lágt'] },
+        { level: 'A2', options: ['stórt', 'lítið', 'hátt', 'lágt', 'langt', 'stuttt', 'þykkt', 'mjótt'] },
+        { level: 'B1', options: ['stórt', 'lítið', 'hátt', 'lágt', 'langt', 'stuttt', 'þykkt', 'mjótt', 'sporöskjulaga', 'kringlótt'] },
+      ],
+    },
+    {
+      question: 'Til hvers er hún/hann þekktur?',
+      icon: '🎯',
+      answers: [
+        { level: 'A1', options: ['til að vinna', 'til að læra', 'til að leika sér'] },
+        { level: 'A2', options: ['til að vinna', 'til að læra', 'til að leika sér', 'til að syngja', 'til að lækna', 'til að kenna'] },
+        { level: 'B1', options: ['til að vinna', 'til að læra', 'til að leika sér', 'til að syngja', 'til að lækna', 'til að kenna', 'til að stjórna', 'til að skapa'] },
+      ],
+    },
+    {
+      question: 'Hver notar þetta?',
+      icon: '👤',
+      answers: [
+        { level: 'A1', options: ['allir', 'börn', 'fullorðnir'] },
+        { level: 'A2', options: ['allir', 'börn', 'fullorðnir', 'nemendur', 'kennarar', 'læknar', 'íþróttamenn'] },
+        { level: 'B1', options: ['allir', 'börn', 'fullorðnir', 'nemendur', 'kennarar', 'læknar', 'íþróttamenn', 'sérfræðingar', 'listamenn', 'ferðamenn', 'iðnaðarmenn'] },
+      ],
+    },
+    {
+      question: 'Hvar er hægt að finna þessa manneskju?',
+      icon: '📍',
+      answers: [
+        { level: 'A1', options: ['heima', 'í vinnunni', 'í skólanum'] },
+        { level: 'A2', options: ['heima', 'í vinnunni', 'í skólanum', 'á sjúkrahúsi', 'á leikvelli'] },
+        { level: 'B1', options: ['heima', 'í vinnunni', 'í skólanum', 'á sjúkrahúsi', 'á leikvelli', 'á sviði', 'í sjónvarpi', 'á ferðalagi'] },
+      ],
+    },
+    {
+      question: 'Hvenær er hún/hann virk/virkur?',
+      icon: '🕐',
+      answers: [
+        { level: 'A1', options: ['á morgnana', 'á daginn', 'á kvöldin', 'alltaf'] },
+        { level: 'A2', options: ['á morgnana', 'á daginn', 'á kvöldin', 'alltaf', 'á veturna', 'á sumrin', 'um helgar', 'á virkum dögum'] },
+        { level: 'B1', options: ['á morgnana', 'á daginn', 'á kvöldin', 'alltaf', 'á veturna', 'á sumrin', 'um helgar', 'á virkum dögum', 'í sérstökum tilvikum', 'í hátíðum', 'daglega', 'sjaldan', 'oft'] },
       ],
     },
   ],
