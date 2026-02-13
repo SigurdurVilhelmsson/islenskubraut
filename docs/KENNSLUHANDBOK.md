@@ -6,7 +6,7 @@
 
 Spjöldin eru hönnuð sem **stoðkerfi (scaffolding)** — þau veita nemandanum tímabundinn stuðning þar til hann nær tökum á orðaforðanum og setningarammanum. Þegar nemandinn verður öruggari er hægt að hækka stigið eða fjarlægja spjaldið.
 
-Verkfærið er þróað á vegum **Kvennaskólans í Reykjavík** fyrir íslenskunám innflytjenda og flóttamanna.
+Verkfærið er þróað fyrir íslenskubraut **Kvennaskólans í Reykjavík** af kennurum við skólann.
 
 ---
 
