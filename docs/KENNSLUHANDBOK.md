@@ -2,7 +2,7 @@
 
 ## 1. Hvað er þetta?
 
-Íslenskubraut er vefverkfæri sem hjálpar kennurum í íslenskukennslu fyrir innflytjendur og flóttamenn að búa til **prentvæn kennsluspjöld**. Spjöldin styðja nemendur í að lýsa myndum munnlega á íslensku með skipulögðum orðaforða og setningarömmum.
+Íslenskubraut er vefverkfæri sem hjálpar kennurum í íslenskukennslu fyrir byrjendur að búa til **prentvæn kennsluspjöld**. Spjöldin styðja nemendur í að lýsa myndum munnlega á íslensku með skipulögðum orðaforða og setningarömmum.
 
 Spjöldin eru hönnuð sem **stoðkerfi (scaffolding)** — þau veita nemandanum tímabundinn stuðning þar til hann nær tökum á orðaforðanum og setningarammanum. Þegar nemandinn verður öruggari er hægt að hækka stigið eða fjarlægja spjaldið.
 
