@@ -101,9 +101,9 @@ export const dyr: Category = {
       question: 'Hvernig finnst það við snertingu?',
       icon: '✋',
       answers: [
-        { level: 'A1', options: ['mjúkt', 'hart', 'sléttt', 'gróft'] },
-        { level: 'A2', options: ['mjúkt', 'hart', 'sléttt', 'gróft', 'þungt', 'létt', 'blautt', 'þurrt'] },
-        { level: 'B1', options: ['mjúkt', 'hart', 'sléttt', 'gróft', 'þungt', 'létt', 'blautt', 'þurrt', 'loðið', 'hálkt', 'stinnt', 'sveigjanlegt'] },
+        { level: 'A1', options: ['mjúkt', 'hart', 'slétt', 'gróft'] },
+        { level: 'A2', options: ['mjúkt', 'hart', 'slétt', 'gróft', 'þungt', 'létt', 'blautt', 'þurrt'] },
+        { level: 'B1', options: ['mjúkt', 'hart', 'slétt', 'gróft', 'þungt', 'létt', 'blautt', 'þurrt', 'loðið', 'hált', 'stinnt', 'sveigjanlegt'] },
       ],
     },
     {
