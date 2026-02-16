@@ -36,17 +36,17 @@ const CONTEXT_ICONS = new Set(['📍', '🕐', '👤', '🎯']);
 
 const QUESTION_LABELS: Record<string, string> = {
   '📚': 'Flokkar',
-  '👁️': 'Utlit',
-  '✋': 'Aferd',
-  '🔊': 'Hljod',
+  '👁️': 'Útlit',
+  '✋': 'Áferð',
+  '🔊': 'Hljóð',
   '👃': 'Lykt',
-  '👅': 'Bragd',
-  '🧱': 'Efnividur',
-  '🔷': 'Logun',
+  '👅': 'Bragð',
+  '🧱': 'Efniviður',
+  '🔷': 'Lögun',
   '🎯': 'Notagildi',
   '👤': 'Hver?',
   '📍': 'Hvar?',
-  '🕐': 'Hvenar?',
+  '🕐': 'Hvenær?',
 };
 
 const styles = StyleSheet.create({
