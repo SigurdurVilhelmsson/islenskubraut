@@ -148,7 +148,7 @@ These labels appear next to icons on the question card. They categorize the type
 | 🔊 | Sound | Hljóð | Question about sounds it makes |
 | 👃 | Smell | Lykt | Question about smell |
 | 👅 | Taste | Bragð | Question about taste |
-| 🧱 | Material | Efniviður | Question about what it's made of |
+| 🧱 | Material | Efni | Question about what it's made of |
 | 🔷 | Shape | Lögun | Question about shape |
 | 🎯 | Purpose / Use | Notagildi | Question about purpose |
 | 👤 | Who? | Hver? | Context question — who |
@@ -163,7 +163,7 @@ These labels appear next to icons on the question card. They categorize the type
 | Aferd | Áferð | Missing accent and ð |
 | Hljod | Hljóð | Missing accent |
 | Bragd | Bragð | Missing ð |
-| Efnividur | Efniviður | Missing accent |
+| Efni | Efni | Missing accent |
 | Logun | Lögun | Missing ö |
 | Hvenar? | Hvenær? | Missing æ |
 
@@ -213,8 +213,8 @@ These labels appear next to icons on the question card. They categorize the type
 | English | Icelandic (current) | Notes |
 |---|---|---|
 | Icelandic Path — Teaching Cards | Íslenskubraut — Kennsluspjöld | Page title |
-| Tool for creating printable teaching cards for Icelandic instruction. For teachers in Icelandic language instruction for immigrants and refugees. | Verkfæri til að búa til prentvæn kennsluspjöld fyrir íslenskukennslu. Fyrir kennara í íslenskunámi innflytjenda og flóttamanna. | Meta description |
-| Icelandic, teaching, cards, Icelandic instruction, immigrants | íslenska, kennsla, spjöld, íslenskukennsla, innflytjendur | Keywords |
+| Tool for creating printable teaching cards for Icelandic instruction. For teachers in Icelandic language instruction for beginners. | Verkfæri til að búa til prentvæn kennsluspjöld fyrir íslenskukennslu. Fyrir kennara í íslenskunámi fyrir byrjendur. | Meta description |
+| Icelandic, teaching, cards, Icelandic instruction, beginners | íslenska, kennsla, spjöld, íslenskukennsla, byrjendur | Keywords |
 
 ---
 
@@ -225,7 +225,7 @@ These labels appear next to icons on the question card. They categorize the type
 | English Name | Icelandic Name | English Description | Icelandic Description |
 |---|---|---|---|
 | Animals | Dýr | Vocabulary about animals — pets, wild animals and livestock | Orðaforði um dýr — gæludýr, villt dýr og húsdýr |
-| Food and drink | Matur og drykkur | Vocabulary about food and drink — types, taste and preparation | Orðaforði um mat og drykk — tegundir, bragð og undirbúning |
+| Food and drink | Matur og drykkur | Vocabulary about food and drink — types, taste and preparation | Orðaforði um mat og drykk — tegundir, bragð og eldun |
 | Vehicles | Farartæki | Vocabulary about vehicles — on land, sea and in the air | Orðaforði um farartæki — á landi, sjó og í lofti |
 | Person / People | Manneskja | Vocabulary about people — appearance, profession and activities | Orðaforði um fólk — útlit, starf og athafnir |
 | Places and buildings | Staðir og byggingar | Vocabulary about places — types of buildings and what you do there | Orðaforði um staði — tegundir bygginga og hvað maður gerir þar |
@@ -239,7 +239,7 @@ These labels appear next to icons on the question card. They categorize the type
 
 | English | Icelandic (current) | Options (Icelandic) |
 |---|---|---|
-| Type | Tegund | gæludýr, villt dýr, húsdýr (búfénaður) |
+| Type | Tegund | gæludýr, villt dýr, húsdýr (búfé) |
 | Biological classification | Líffræðilegur flokkur | spendýr, fugl, fiskur, skriðdýr, froskdýr, skordýr |
 | Habitat | Búsvæði | á landi, í vatni, í lofti, á landi og í vatni |
 | Appearance | Útlit | hefur feld, hefur fjaðrir, hefur hreistur, hefur hala, hefur gogg, hefur horn, hefur fjóra fætur, hefur tvo fætur, flýgur, syndir, hleypur |
@@ -548,30 +548,30 @@ These labels appear next to icons on the question card. They categorize the type
 |---|---|---|
 | A1 | This is an animal. It is big. It has fur. | Þetta er dýr. Það er stórt. Það hefur feld. |
 | A2 | This is an animal that lives in water. It has scales and swims. It eats plants. | Þetta er dýr sem býr í vatni. Það hefur hreistur og syndir. Það étur plöntur. |
-| B1 | I think this is a dolphin because it swims and lives in the ocean. This animal is gray and smart. It is similar to a whale but unlike a fish. | Ég held að þetta sé delfínn vegna þess að hann syndir og býr í sjónum. Þetta dýr er grátt og snjallt. Það er líkt hval en ólíkt fisk. |
+| B1 | I think this is a dolphin because it swims and lives in the ocean. This animal is gray and smart. It is similar to a whale but unlike a fish. | Ég held að þetta sé höfrungur vegna þess að hann syndir og býr í sjónum. Þetta dýr er grátt og snjallt. Það er líkt hval en ólíkt fiski. |
 
 ### Matur og drykkur (Food & Drink)
 
 | Level | English | Icelandic (current) |
 |---|---|---|
-| A1 | This is a fruit. It is sweet. You eat it for breakfast. | Þetta er ávöxtur. Það er sætt. Maður borðar það í morgunmat. |
+| A1 | This is a fruit. It is sweet. You eat it for breakfast. | Þetta er ávöxtur. Hann er sætur. Maður borðar það í morgunmat. |
 | A2 | This is a vegetable that is green. You eat it raw. It is healthy. | Þetta er grænmeti sem er grænt. Maður borðar það hrátt. Það er hollt. |
-| B1 | This is a fruit that tastes sweet and sour. It is often eaten as a snack. I think it is very good. | Þetta er ávöxtur sem bragðast sætt og súrt. Það er oft borðað sem millimál. Mér finnst það mjög gott. |
+| B1 | This is a fruit that tastes sweet and sour. It is often eaten as a snack. I think it is very good. | Þetta er ávöxtur sem er sætur og súr á bragðið. Hann er oft borðaður sem millimál. Mér finnst hann mjög góður. |
 
 ### Farartæki (Vehicles)
 
 | Level | English | Icelandic (current) |
 |---|---|---|
-| A1 | This is a car. It goes on land. It is big. | Þetta er bíll. Það fer á landi. Það er stórt. |
-| A2 | This is a ship that goes on the sea. It doesn't have wheels and is big. | Þetta er skip sem fer á sjó. Það hefur ekki hjól og er stórt. |
-| B1 | This vehicle is an airplane that is used to travel long distances. It can carry many people and goes in the air. | Þetta farartæki er flugvél sem er notað til að ferðast langar leiðir. Það getur flutt marga og fer í lofti. |
+| A1 | This is a car. It goes on land. It is big. | Þetta er bíll. Hann fer um á landi. Hann er stór. |
+| A2 | This is a ship that goes on the sea. It doesn't have wheels and is big. | Þetta er skip sem ferðast um á sjó. Það hefur ekki hjól og er stórt. |
+| B1 | This vehicle is an airplane that is used to travel long distances. It can carry many people and goes in the air. | Þetta farartæki er flugvél sem er notað til að ferðast langar leiðir. Það getur flutt marga og ferðast um í lofti. |
 
 ### Manneskja (People)
 
 | Level | English | Icelandic (current) |
 |---|---|---|
 | A1 | This is a teacher. She is young. She reads. | Þetta er kennari. Hún er ung. Hún les. |
-| A2 | This is a woman who is tall. She is young and distinguished. She works as a doctor. | Þetta er kona sem er há. Hún er ung og mynduleg. Hún vinnur sem læknir. |
+| A2 | This is a woman who is tall. She is young and distinguished. She works as a doctor. | Þetta er kona sem er há. Hún er ung og vel menntuð. Hún vinnur sem læknir. |
 | B1 | I think this is a singer because she is famous and sings. This person is young and is known for music. | Ég held að þetta sé söngvari vegna þess að hún er fræg og syngur. Þessi manneskja er ung og er þekkt fyrir tónlist. |
 
 ### Staðir og byggingar (Places & Buildings)
@@ -586,9 +586,9 @@ These labels appear next to icons on the question card. They categorize the type
 
 | Level | English | Icelandic (current) |
 |---|---|---|
-| A1 | This is a coat. It is blue. | Þetta er úlpa. Það er blátt. |
-| A2 | This is a sweater that is red. You wear it in winter. | Þetta er peysa sem er rauð. Maður klæðist því á veturna. |
-| B1 | This is a leather jacket that you use in winter. It is black and suits well in cold weather. | Þetta er jakki úr leðri sem maður notar á veturna. Það er svart og hentar vel í kulda. |
+| A1 | This is a coat. It is blue. | Þetta er úlpa. Hún er blá. |
+| A2 | This is a sweater that is red. You wear it in winter. | Þetta er peysa sem er rauð. Maður klæðist henni á veturna. |
+| B1 | This is a leather jacket that you use in winter. It is black and suits well in cold weather. | Þetta er jakki úr leðri sem maður notar á veturna. Hann er svartur og hentar vel í kulda. |
 
 ---
 
