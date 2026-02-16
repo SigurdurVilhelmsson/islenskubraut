@@ -38,6 +38,12 @@ Edit the **Icelandic** column as needed, and the codebase can be updated to matc
 26. [Teacher Notes (per level)](#26-teacher-notes-per-level)
 27. [Guiding Questions](#27-guiding-questions)
 28. [PDF-Only Text](#28-pdf-only-text)
+29. [Guiding Question Answer Options — Dýr](#29-guiding-question-answer-options--dýr)
+30. [Guiding Question Answer Options — Matur og drykkur](#30-guiding-question-answer-options--matur-og-drykkur)
+31. [Guiding Question Answer Options — Farartæki](#31-guiding-question-answer-options--farartæki)
+32. [Guiding Question Answer Options — Manneskja](#32-guiding-question-answer-options--manneskja)
+33. [Guiding Question Answer Options — Staðir og byggingar](#33-guiding-question-answer-options--staðir-og-byggingar)
+34. [Guiding Question Answer Options — Föt og klæðnaður](#34-guiding-question-answer-options--föt-og-klæðnaður)
 
 ---
 
@@ -227,90 +233,90 @@ These labels appear next to icons on the question card. They categorize the type
 
 ---
 
-## 13. Sub-Category Names — Dýr (Animals)
+## 13. Sub-Category Names & Options — Dýr (Animals)
 
 **File:** `src/data/categories/dyr.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Type | Tegund |
-| Biological classification | Líffræðilegur flokkur |
-| Habitat | Búsvæði |
-| Appearance | Útlit |
-| Size | Stærð |
-| Diet | Fæða |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Type | Tegund | gæludýr, villt dýr, húsdýr (búfénaður) |
+| Biological classification | Líffræðilegur flokkur | spendýr, fugl, fiskur, skriðdýr, froskdýr, skordýr |
+| Habitat | Búsvæði | á landi, í vatni, í lofti, á landi og í vatni |
+| Appearance | Útlit | hefur feld, hefur fjaðrir, hefur hreistur, hefur hala, hefur gogg, hefur horn, hefur fjóra fætur, hefur tvo fætur, flýgur, syndir, hleypur |
+| Size | Stærð | lítið, meðalstórt, stórt, mjög stórt |
+| Diet | Fæða | étur plöntur (grasæta), étur kjöt (kjötæta), étur bæði (alæta) |
 
 ---
 
-## 14. Sub-Category Names — Matur og drykkur (Food & Drink)
+## 14. Sub-Category Names & Options — Matur og drykkur (Food & Drink)
 
 **File:** `src/data/categories/matur.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Type | Tegund |
-| Taste | Bragð |
-| Texture/form | Áferð/form |
-| Preparation | Undirbúningur |
-| Where | Hvar |
-| When | Hvenær |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Type | Tegund | ávöxtur, grænmeti, kjöt, fiskur, mjólkurvara, sælgæti, brauð/korn, drykkur |
+| Taste | Bragð | sætt, salt, súrt, beiskt, kryddað/sterkt |
+| Texture/form | Áferð/form | mjúkt, hart, fljótandi, þurrt |
+| Preparation | Undirbúningur | hrátt, soðið, steikt, bakað, heitt, kalt, frosið |
+| Where | Hvar | í eldhúsinu, í ísskápnum, í búðinni, á veitingastað |
+| When | Hvenær | í morgunmat, í hádegismat, í kvöldmat, sem millimál, alltaf/hvenær sem er |
 
 ---
 
-## 15. Sub-Category Names — Farartæki (Vehicles)
+## 15. Sub-Category Names & Options — Farartæki (Vehicles)
 
 **File:** `src/data/categories/farartaeki.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Type | Tegund |
-| Where it goes | Hvar fer það |
-| Size | Stærð |
-| Characteristics / Features | Eiginleikar |
-| When used | Hvenær notað |
-| Number of passengers | Fjöldi farþega |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Type | Tegund | bíll, rúta, hjól/reiðhjól, mótorhjól, lest, flugvél, skip/bátur, sleði, hlaupahjól |
+| Where it goes | Hvar fer það | á landi, á sjó/vatni, í lofti, á snjó |
+| Size | Stærð | lítið, meðalstórt, stórt, risastórt |
+| Characteristics / Features | Eiginleikar | hefur hjól, hefur ekki hjól, með vél, án vélar, hraðvirkt, hægvirkt |
+| When used | Hvenær notað | á veturna, á sumrin, allt árið, í sérstökum tilfellum |
+| Number of passengers | Fjöldi farþega | einn, fáir, margir |
 
 ---
 
-## 16. Sub-Category Names — Manneskja (People)
+## 16. Sub-Category Names & Options — Manneskja (People)
 
 **File:** `src/data/categories/manneskja.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Status (alive/dead/fictional) | Staða |
-| Fame | Frægð |
-| Profession/role | Starf/hlutverk |
-| Age | Aldur |
-| Appearance | Útlit |
-| Activities | Athafnir |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Status (alive/dead/fictional) | Staða | á lífi, látin, skálduð persóna |
+| Fame | Frægð | fræg, ekki fræg |
+| Profession/role | Starf/hlutverk | leikari, íþróttamaður, söngvari, stjórnmálamaður, nemandi, kennari, læknir, lögreglumaður, kokkur, listamaður |
+| Age | Aldur | barn, unglingur, fullorðinn, aldraður/öldruð |
+| Appearance | Útlit | há/hár, lág/lágur, ung/ungur, gömul/gamall, með sítt hár, með stutt hár, sköllótt, með gleraugu, án gleraugna, með skegg, án skeggs |
+| Activities | Athafnir | vinnur, lærir, syngur, spilar, ferðast, eldar, les, teiknar |
 
 ---
 
-## 17. Sub-Category Names — Staðir og byggingar (Places & Buildings)
+## 17. Sub-Category Names & Options — Staðir og byggingar (Places & Buildings)
 
 **File:** `src/data/categories/stadir.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Type | Tegund |
-| Location | Staðsetning |
-| Size | Stærð |
-| What you do there | Hvað gerir maður þar |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Type | Tegund | hús, íbúð, skóli, sjúkrahús, búð/verslun, veitingastaður, safn, kirkja, sundlaug, leikvöllur |
+| Location | Staðsetning | í bænum/borginni, í úthverfi, á landi/sveitinni, við sjóinn, í fjöllunum |
+| Size | Stærð | lítill/lítið, meðalstór/meðalstórt, stór/stórt |
+| What you do there | Hvað gerir maður þar | borðar, verslar, syndir, lærir, vinnur, sefur, leikur sér |
 
 ---
 
-## 18. Sub-Category Names — Föt og klæðnaður (Clothing)
+## 18. Sub-Category Names & Options — Föt og klæðnaður (Clothing)
 
 **File:** `src/data/categories/klaednadur.ts`
 
-| English | Icelandic (current) |
-|---|---|
-| Type | Tegund |
-| Color | Litur |
-| Material | Efni |
-| When | Hvenær |
-| Which body part | Á hvaða líkamshluta |
+| English | Icelandic (current) | Options (Icelandic) |
+|---|---|---|
+| Type | Tegund | bolur/stuttermabolur, peysa, skyrta, buxur, pilsið/pils, jakki, úlpa, sokkar, skór, húfa, hanskar, trefill |
+| Color | Litur | rauður/rautt, blár/blátt, grænn/grænt, gulur/gult, svartur/svart, hvítur/hvítt, bleikur/bleikt, brúnn/brúnt |
+| Material | Efni | úr ull, úr bómull, úr leðri, úr plasti |
+| When | Hvenær | á veturna, á sumrin, allt árið, þegar rignir, í sérstakar tilefni |
+| Which body part | Á hvaða líkamshluta | á höfðinu, á efri hluta líkamans, á neðri hluta líkamans, á fótunum, á höndunum |
 
 ---
 
@@ -649,6 +655,466 @@ These are the questions shown on the question card (spurningaspjald). Each categ
 | Question card | Spurningaspjald | Page 3 title |
 | Purpose and context | Notagildi og samhengi | Section divider |
 | Icelandic Path — Women's School in Reykjavík — [Category] [Level] | Íslenskubraut — Kvennaskólinn í Reykjavík — [Flokkur] [Stig] | Page footer (all 3 pages) |
+
+---
+
+## 29. Guiding Question Answer Options — Dýr
+
+**File:** `src/data/categories/dyr.ts`
+
+### Hvers konar dýr er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | gæludýr, villt dýr, húsdýr |
+| A2 | gæludýr, villt dýr, húsdýr, spendýr, fugl, fiskur |
+| B1 | gæludýr, villt dýr, húsdýr, spendýr, fugl, fiskur, skriðdýr, froskdýr, skordýr |
+
+### Hvernig lítur það út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | feldur, fjaðrir, hreistur, hali |
+| A2 | feldur, fjaðrir, hreistur, hali, goggur, horn, fjórir fætur, tveir fætur |
+| B1 | feldur, fjaðrir, hreistur, hali, goggur, horn, fjórir fætur, tveir fætur, flýgur, syndir, hleypur |
+
+### Hvernig finnst það við snertingu? (✋)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | mjúkt, hart, sléttt, gróft |
+| A2 | mjúkt, hart, sléttt, gróft, þungt, létt, blautt, þurrt |
+| B1 | mjúkt, hart, sléttt, gróft, þungt, létt, blautt, þurrt, loðið, hálkt, stinnt, sveigjanlegt |
+
+### Hvaða hljóð gefur það frá sér? (🔊)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | hátt, lágt, þögult |
+| A2 | hátt, lágt, þögult, gelur, mjallar, öskrar, súðar, hringir |
+| B1 | hátt, lágt, þögult, gelur, mjallar, öskrar, súðar, hringir, hvæsir, umar, dúnar, þrymir |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, kringlótt, fernt |
+| A2 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt |
+| B1 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt, sporöskjulaga, þríhyrningslaga, sívalningslaga, óreglulegt |
+
+### Til hvers er það notað? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að gæta, til að klappa, til að borða |
+| A2 | til að gæta, til að klappa, til að borða, til að hjálpa, til að vinna, til að leika sér |
+| B1 | til að gæta, til að klappa, til að borða, til að hjálpa, til að vinna, til að leika sér, til að verja, til að rannsaka |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, bændur, dýralæknar, veiðimenn |
+| B1 | allir, börn, fullorðnir, bændur, dýralæknar, veiðimenn, sérfræðingar, ferðamenn |
+
+### Hvar er hægt að finna þetta? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | heima, úti, á bæ |
+| A2 | heima, úti, á bæ, í dýragarðinum, í náttúrunni, í sjónum |
+| B1 | heima, úti, á bæ, í dýragarðinum, í náttúrunni, í sjónum, á hálendinu, í skóginum |
+
+### Hvenær er þetta sést? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, í sérstökum tilvikum, daglega, sjaldan, oft |
+
+---
+
+## 30. Guiding Question Answer Options — Matur og drykkur
+
+**File:** `src/data/categories/matur.ts`
+
+### Hvers konar matur er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | ávöxtur, grænmeti, kjöt, drykkur |
+| A2 | ávöxtur, grænmeti, kjöt, fiskur, mjólkurvara, sælgæti, brauð/korn, drykkur |
+| B1 | ávöxtur, grænmeti, kjöt, fiskur, mjólkurvara, sælgæti, brauð/korn, drykkur, krydd, sósa |
+
+### Hvernig lítur það út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | rautt, grænt, gult, hvítt |
+| A2 | rautt, grænt, gult, hvítt, brúnt, appelsínugult, stórt, lítið |
+| B1 | rautt, grænt, gult, hvítt, brúnt, appelsínugult, stórt, lítið, kringlótt, langt, flatt |
+
+### Hvernig bragðast það? (👅)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | sætt, salt, súrt, beiskt |
+| A2 | sætt, salt, súrt, beiskt, kryddað, sterkt, milt, ferskt |
+| B1 | sætt, salt, súrt, beiskt, kryddað, sterkt, milt, ferskt, bragðmikið, bragðlaust, sælgæti-sætt, náttúrulega sætt |
+
+### Hvernig finnst það við snertingu? (✋)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | mjúkt, hart, sléttt, gróft |
+| A2 | mjúkt, hart, sléttt, gróft, þungt, létt, heitt, kalt, blautt, þurrt |
+| B1 | mjúkt, hart, sléttt, gróft, þungt, létt, heitt, kalt, blautt, þurrt, loðið, hálkt, stinnt, sveigjanlegt |
+
+### Hvernig lyktar af því? (👃)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | gott, vont, ekkert |
+| A2 | gott, vont, ekkert, ferskt, sterkt, milt |
+| B1 | gott, vont, ekkert, ferskt, sterkt, milt, ilmandi, stingandi, sætt, beiskt |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, kringlótt, fernt |
+| A2 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt |
+| B1 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt, sporöskjulaga, þríhyrningslaga, sívalningslaga, óreglulegt |
+
+### Til hvers er það notað? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að borða, til að drekka |
+| A2 | til að borða, til að drekka, til að elda með, til að baka með |
+| B1 | til að borða, til að drekka, til að elda með, til að baka með, til að næra sig, til að njóta |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, kokkar, bakarar |
+| B1 | allir, börn, fullorðnir, kokkar, bakarar, sérfræðingar, ferðamenn |
+
+### Hvar er hægt að finna þetta? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | heima, í búð, á veitingastað |
+| A2 | heima, í búð, á veitingastað, í skólanum, úti |
+| B1 | heima, í búð, á veitingastað, í skólanum, úti, á markaði, í garðinum |
+
+### Hvenær er þetta notað? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum, í sérstökum tilvikum, í hátíðum, daglega, sjaldan, oft |
+
+---
+
+## 31. Guiding Question Answer Options — Farartæki
+
+**File:** `src/data/categories/farartaeki.ts`
+
+### Hvers konar farartæki er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | bíll, rúta, hjól, flugvél, skip |
+| A2 | bíll, rúta, hjól, mótorhjól, lest, flugvél, skip/bátur, sleði |
+| B1 | bíll, rúta, hjól, mótorhjól, lest, flugvél, skip/bátur, sleði, hlaupahjól, sportvagn, þyrla |
+
+### Hvernig lítur það út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, með hjólum, án hjóla |
+| A2 | stórt, lítið, með hjólum, án hjóla, langt, stuttt, hátt, lágt |
+| B1 | stórt, lítið, með hjólum, án hjóla, langt, stuttt, hátt, lágt, straumlínulaga, fernt, hraðvirkt |
+
+### Hvaða hljóð gefur það frá sér? (🔊)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | hátt, lágt, þögult |
+| A2 | hátt, lágt, þögult, súðar, hringir, öskrar |
+| B1 | hátt, lágt, þögult, súðar, hringir, öskrar, hvæsir, umar, dúnar, þrymir |
+
+### Úr hverju er það gert? (🧱)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | úr málmi, úr plasti, úr tré |
+| A2 | úr málmi, úr plasti, úr tré, úr steini, úr gleri |
+| B1 | úr málmi, úr plasti, úr tré, úr steini, úr gleri, úr endurunnru efni, úr náttúrulegum efnum, úr gerviefnum |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, kringlótt, fernt |
+| A2 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt |
+| B1 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt, sporöskjulaga, þríhyrningslaga, sívalningslaga, óreglulegt |
+
+### Til hvers er það notað? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að ferðast, til að flytja, til að leika sér |
+| A2 | til að ferðast, til að flytja, til að leika sér, til að vinna |
+| B1 | til að ferðast, til að flytja, til að leika sér, til að vinna, til að keppa, til að bjarga |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, bílstjórar, flugmenn, sjómenn |
+| B1 | allir, börn, fullorðnir, bílstjórar, flugmenn, sjómenn, sérfræðingar, ferðamenn, iðnaðarmenn |
+
+### Hvar er hægt að nota/finna þetta? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á götunni, á sjónum, í loftinu |
+| A2 | á götunni, á sjónum, í loftinu, á þjóðveginum, á flugvellinum |
+| B1 | á götunni, á sjónum, í loftinu, á þjóðveginum, á flugvellinum, í höfninni, á lestarbraut |
+
+### Hvenær er þetta notað? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum, í sérstökum tilvikum, í hátíðum, daglega, sjaldan, oft |
+
+---
+
+## 32. Guiding Question Answer Options — Manneskja
+
+**File:** `src/data/categories/manneskja.ts`
+
+### Hvers konar manneskja er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | barn, fullorðinn, gamall/gömul |
+| A2 | barn, unglingur, fullorðinn, aldraður/öldruð, fræg, ekki fræg |
+| B1 | barn, unglingur, fullorðinn, aldraður/öldruð, fræg, ekki fræg, á lífi, látin, skálduð persóna |
+
+### Hvernig lítur hún/hann út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | há/hár, lág/lágur, ung/ungur, gömul/gamall |
+| A2 | há/hár, lág/lágur, ung/ungur, gömul/gamall, með sítt hár, með stutt hár, með gleraugu |
+| B1 | há/hár, lág/lágur, ung/ungur, gömul/gamall, með sítt hár, með stutt hár, sköllótt, með gleraugu, með skegg, án skeggs |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, hátt, lágt |
+| A2 | stórt, lítið, hátt, lágt, langt, stuttt, þykkt, mjótt |
+| B1 | stórt, lítið, hátt, lágt, langt, stuttt, þykkt, mjótt, sporöskjulaga, kringlótt |
+
+### Til hvers er hún/hann þekktur? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að vinna, til að læra, til að leika sér |
+| A2 | til að vinna, til að læra, til að leika sér, til að syngja, til að lækna, til að kenna |
+| B1 | til að vinna, til að læra, til að leika sér, til að syngja, til að lækna, til að kenna, til að stjórna, til að skapa |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, nemendur, kennarar, læknar, íþróttamenn |
+| B1 | allir, börn, fullorðnir, nemendur, kennarar, læknar, íþróttamenn, sérfræðingar, listamenn, ferðamenn, iðnaðarmenn |
+
+### Hvar er hægt að finna þessa manneskju? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | heima, í vinnunni, í skólanum |
+| A2 | heima, í vinnunni, í skólanum, á sjúkrahúsi, á leikvelli |
+| B1 | heima, í vinnunni, í skólanum, á sjúkrahúsi, á leikvelli, á sviði, í sjónvarpi, á ferðalagi |
+
+### Hvenær er hún/hann virk/virkur? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum, í sérstökum tilvikum, í hátíðum, daglega, sjaldan, oft |
+
+---
+
+## 33. Guiding Question Answer Options — Staðir og byggingar
+
+**File:** `src/data/categories/stadir.ts`
+
+### Hvers konar staður er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | hús, skóli, búð, sundlaug |
+| A2 | hús, íbúð, skóli, sjúkrahús, búð/verslun, veitingastaður, safn, kirkja, sundlaug, leikvöllur |
+| B1 | hús, íbúð, skóli, sjúkrahús, búð/verslun, veitingastaður, safn, kirkja, sundlaug, leikvöllur, bókasafn, íþróttahús |
+
+### Hvernig lítur þetta út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, hátt, lágt |
+| A2 | stórt, lítið, hátt, lágt, gamalt, nýtt, fallegt, ljótt |
+| B1 | stórt, lítið, hátt, lágt, gamalt, nýtt, fallegt, ljótt, nútímalegt, sögulegt |
+
+### Hvernig lyktar þar? (👃)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | gott, vont, ekkert |
+| A2 | gott, vont, ekkert, ferskt, sterkt, milt |
+| B1 | gott, vont, ekkert, ferskt, sterkt, milt, ilmandi, stingandi, sætt, beiskt |
+
+### Úr hverju er það gert? (🧱)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | úr tré, úr steini, úr málmi |
+| A2 | úr tré, úr steini, úr málmi, úr gleri, úr plasti |
+| B1 | úr tré, úr steini, úr málmi, úr gleri, úr plasti, úr endurunnru efni, úr náttúrulegum efnum, úr gerviefnum |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, kringlótt, fernt |
+| A2 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt |
+| B1 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt, sporöskjulaga, þríhyrningslaga, sívalningslaga, óreglulegt |
+
+### Til hvers er þetta notað? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að búa, til að læra, til að versla |
+| A2 | til að búa, til að læra, til að versla, til að vinna, til að hvílast |
+| B1 | til að búa, til að læra, til að versla, til að vinna, til að hvílast, til að stunda íþróttir, til að skemmta sér |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, nemendur, kennarar, læknar |
+| B1 | allir, börn, fullorðnir, nemendur, kennarar, læknar, sérfræðingar, listamenn, ferðamenn, iðnaðarmenn |
+
+### Hvar er þetta? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | í bænum, úti á landi, við sjóinn |
+| A2 | í bænum, úti á landi, við sjóinn, í úthverfi, í fjöllunum |
+| B1 | í bænum, úti á landi, við sjóinn, í úthverfi, í fjöllunum, í miðborginni, á hálendinu |
+
+### Hvenær er þetta notað? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum, í sérstökum tilvikum, í hátíðum, daglega, sjaldan, oft |
+
+---
+
+## 34. Guiding Question Answer Options — Föt og klæðnaður
+
+**File:** `src/data/categories/klaednadur.ts`
+
+### Hvers konar klæðnaður er þetta? (📚)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | bolur, buxur, jakki, skór |
+| A2 | bolur, peysa, skyrta, buxur, pilsið, jakki, úlpa, sokkar, skór, húfa |
+| B1 | bolur, peysa, skyrta, buxur, pilsið, jakki, úlpa, sokkar, skór, húfa, hanskar, trefill |
+
+### Hvernig lítur það út? (👁️)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | rautt, blátt, grænt, svart, hvítt |
+| A2 | rautt, blátt, grænt, svart, hvítt, gult, bleikt, brúnt, stórt, lítið |
+| B1 | rautt, blátt, grænt, svart, hvítt, gult, bleikt, brúnt, stórt, lítið, mynstur, einlitt |
+
+### Hvernig finnst það við snertingu? (✋)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | mjúkt, hart, sléttt, gróft |
+| A2 | mjúkt, hart, sléttt, gróft, þungt, létt, heitt, kalt, blautt, þurrt |
+| B1 | mjúkt, hart, sléttt, gróft, þungt, létt, heitt, kalt, blautt, þurrt, loðið, hálkt, stinnt, sveigjanlegt |
+
+### Úr hverju er það gert? (🧱)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | úr ull, úr bómull, úr leðri, úr plasti |
+| A2 | úr ull, úr bómull, úr leðri, úr plasti, úr tré, úr málmi, úr steini, úr gleri |
+| B1 | úr ull, úr bómull, úr leðri, úr plasti, úr tré, úr málmi, úr steini, úr gleri, úr endurunnru efni, úr náttúrulegum efnum, úr gerviefnum |
+
+### Hvaða lögun hefur það? (🔷)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | stórt, lítið, kringlótt, fernt |
+| A2 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt |
+| B1 | stórt, lítið, kringlótt, fernt, langt, stuttt, hátt, lágt, flatt, þykkt, sporöskjulaga, þríhyrningslaga, sívalningslaga, óreglulegt |
+
+### Til hvers er það notað? (🎯)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | til að hlýja sér, til að verja sig, til að líta vel út |
+| A2 | til að hlýja sér, til að verja sig, til að líta vel út, til að stunda íþróttir |
+| B1 | til að hlýja sér, til að verja sig, til að líta vel út, til að stunda íþróttir, til að vinna, til að vera þægilegur |
+
+### Hver notar þetta? (👤)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | allir, börn, fullorðnir |
+| A2 | allir, börn, fullorðnir, nemendur, íþróttamenn |
+| B1 | allir, börn, fullorðnir, nemendur, íþróttamenn, sérfræðingar, listamenn, ferðamenn, iðnaðarmenn |
+
+### Hvar er hægt að nota þetta? (📍)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | inni, úti, í skólanum |
+| A2 | inni, úti, í skólanum, í vinnunni, í íþróttum |
+| B1 | inni, úti, í skólanum, í vinnunni, í íþróttum, á hátíð, á ferðalagi |
+
+### Hvenær er þetta notað? (🕐)
+
+| Level | Options (Icelandic) |
+|---|---|
+| A1 | á morgnana, á daginn, á kvöldin, alltaf |
+| A2 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum |
+| B1 | á morgnana, á daginn, á kvöldin, alltaf, á veturna, á sumrin, um helgar, á virkum dögum, í sérstökum tilvikum, í hátíðum, daglega, sjaldan, oft |
 
 ---
 
