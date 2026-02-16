@@ -36,17 +36,17 @@ const CONTEXT_ICONS = new Set(['📍', '🕐', '👤', '🎯']);
 
 const QUESTION_LABELS: Record<string, string> = {
   '📚': 'Flokkar',
-  '👁️': 'Utlit',
-  '✋': 'Aferd',
-  '🔊': 'Hljod',
+  '👁️': 'Útlit',
+  '✋': 'Áferð',
+  '🔊': 'Hljóð',
   '👃': 'Lykt',
-  '👅': 'Bragd',
-  '🧱': 'Efnividur',
-  '🔷': 'Logun',
+  '👅': 'Bragð',
+  '🧱': 'Efniviður',
+  '🔷': 'Lögun',
   '🎯': 'Notagildi',
   '👤': 'Hver?',
   '📍': 'Hvar?',
-  '🕐': 'Hvenar?',
+  '🕐': 'Hvenær?',
 };
 
 const styles = StyleSheet.create({
@@ -343,7 +343,7 @@ function createQuestionBlock(
       React.createElement(
         Text,
         { style: styles.questionLabel },
-        `${question.icon} ${QUESTION_LABELS[question.icon] || ''}`
+        QUESTION_LABELS[question.icon] || ''
       )
     ),
     React.createElement(
@@ -392,7 +392,7 @@ function createContextCard(
       React.createElement(
         Text,
         { style: styles.contextCardHeaderText },
-        `${question.icon} ${question.question}`
+        question.question
       )
     ),
     React.createElement(
@@ -437,7 +437,7 @@ export function createSpjaldDocument(category: Category, level: Level) {
         React.createElement(
           Text,
           { style: styles.frontHeaderText },
-          `${category.icon}  ${category.name.toUpperCase()}`
+          category.name.toUpperCase()
         ),
         React.createElement(
           View,
@@ -503,7 +503,7 @@ export function createSpjaldDocument(category: Category, level: Level) {
         React.createElement(
           Text,
           { style: styles.frontHeaderText },
-          `${category.icon}  ${category.name.toUpperCase()}`
+          category.name.toUpperCase()
         ),
         React.createElement(
           View,
@@ -569,7 +569,7 @@ export function createSpjaldDocument(category: Category, level: Level) {
         React.createElement(
           Text,
           { style: styles.frontHeaderText },
-          `${category.icon}  ${category.name.toUpperCase()}`
+          category.name.toUpperCase()
         ),
         React.createElement(
           View,
